@@ -1,0 +1,64 @@
+.TH PXLSTR "1" "2017-02-23" "0.1" "pxlstr manual"
+.SH NAME
+pxlstr \- print tree summary
+.SH SYNOPSIS
+.B pxlstr
+[\fI-abhilnruvV\fR] [\fI-t FILE\fR] [\fI-o FILE\fR]
+.SH DESCRIPTION
+Aspects of trees often provide a large amount of information regarding the behavior of the data that was used to create the tree. This program conveniently allows the user to uncover many of these aspects from the command line, such as tree length, whether a tree is rooted, number of terminals, etc.
+.br
+The input may be given in \fINEWICK\fR or \fINEXUS\fR format. If no input file is provided via \fI-t\fR, the program tries to read from stdin instead.
+
+.SH OUTPUT
+If none the property options \fB-abilnruv\fR are given, all properties are printed. Otherwise \fIexactly one\fR may be used to limit output to that aspect.
+
+.SH OPTIONS
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Display version and exit.
+.TP
+\fB\-a\fR, \fB\-\-age\fR
+Print the height of root (must be rooted and ultrametric)
+.TP
+\fB\-b\fR, \fB\-\-binary\fR
+Print whether tree is binary
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Display help and exit
+.TP
+\fB\-i\fR, \fB\-\-tiplabels\fR
+Print all tip labels (one per line)
+.TP
+\fB\-l\fR, \fB\-\-length\fR
+Print the length of the tree
+.TP
+\fB\-n\fR, \fB\-\-ntips\fR
+Print the number of terminals
+.TP
+\fB\-o\fR, \fB\-\-outf=\fR\fIFILE\fR
+Output tree file, stdout otherwise
+.TP
+\fB\-r\fR, \fB\-\-rooted\fR
+Print whether the tree is rooted
+.TP
+\fB\-t\fR, \fB\-\-treef=\fR\fIFILE\fR
+Input tree file, stdin otherwise
+.TP
+\fB\-u\fR, \fB\-\-ultrametric\fR
+Print whether tree is ultrametric
+.TP
+\fB\-v\fR, \fB\-\-rtvar\fR
+Print root-to-tip variance
+
+.SH COPYRIGHT
+Copyright \(co 2016 - 2017 Joseph W. Brown, Joseph F. Walker, and Stephen A. Smith;
+License GPLv3+: GNU GPL version 3 or later.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+The full license text is available at <http://gnu.org/licenses/gpl.html>.
+.PP
+.SH BUGS
+.SS Reporting Bugs
+Please report bugs at <https://github.com/FePhyFoFum/phyx>.
+.SS
